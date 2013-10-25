@@ -1,0 +1,16 @@
+/*
+Plugin Name: jQuery Accordion
+Plugin URI: https://github.com/jeffikus/jquery-accordion
+Description: jQuery Accordion by Jeffikus is the best WordPress plugin to display an accordion!
+Version: 1.0.0
+Author: Jeffikus
+Author URI: http://jeffikus.com/
+License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+*/
+/*-----------------------------------------------------------------------------------*/
+/* Frontend Stylesheet */
+/*-----------------------------------------------------------------------------------*/
+
+h3.ui-accordion-header {
+	margin: 0px !important;
+}
