@@ -7,7 +7,7 @@ jQuery Accordion by [Jeffikus](http://jeffikus.com/ "Jeffikus") is the best Word
 
 The plugin basically does the following:
 
-* Allows an accordion of content to be added to a posts content
+* Allows an accordion of content to be added to a posts content, use the shortcode [jqueryaccordion] to insert it into a page
 
 # Why on Github and not WordPress.org
 

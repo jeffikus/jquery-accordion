@@ -50,7 +50,7 @@ class jQuery_Accordion_Main {
 	public function init () {
 
         // Filters
-        add_shortcode( 'accordion', array( &$this, 'accordion_shortcode' ) );
+        add_shortcode( 'jqueryaccordion', array( &$this, 'accordion_shortcode' ) );
 
 	} // End init()
 
@@ -90,12 +90,13 @@ class jQuery_Accordion_Main {
      */
     public function accordion_shortcode() {
         extract( shortcode_atts( array(
-          'amount' => '3',
-          'category' => array()
+          'posts' => '3',
+          'category' => 'Featured'
         ), $atts ) );
 
         // The Query
-        $query_args['posts_per_page'] = $atts['amount'];
+        $query_args['posts_per_page'] = $atts['posts'];
+        $query_args['category_name'] = $atts['category'];
         $the_query = new WP_Query($query_args);
 
         // Build Output
